@@ -1,10 +1,14 @@
 =========================================================
+
     Title:  KinoZhutt
-    the group project
+    the group 
+    
 =========================================================
     
 ================
-Program Overview
+
+    Program Overview
+
 ================
 
     KinoJutt is a database of information related to films.
