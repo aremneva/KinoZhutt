@@ -1,29 +1,49 @@
 % rebase('layout.tpl', title='Home Page', year=year)
 
 <div class="jumbotron">
-    <h1>Bottle</h1>
-    <p class="lead">Bottle is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://bottlepy.org/docs/dev/index.html" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+    <h1>KinoZhutt</h1>
+    <p class="lead">KinoZhutt is a website with horrors and trillers for all tastes (but not for all ages).</p>
+    <style>
+    img {
+    width: 350px;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 10px;
+    margin-top: 20 px;
+    }
+
+    .box {
+   display: flex;
+   align-items: top;
+}
+    </style>
 </div>
 
 <div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
+    <div class="col-md-6">
+
+        <h2>Brand new articles</h2>
+        <div class="box">
+        <img src="static\images\cat.jpg">
+        <br>
         <p>
-            Bottle gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
+            This is just a cat. It's cute. This is just a cat. It's cute. 
         </p>
-        <p><a class="btn btn-default" href="http://bottlepy.org/docs/dev/index.html">Learn more &raquo;</a></p>
+        </div>
+
+        <br> <br>
+
+        <div class="box">
+        <img src="https://fastly.syfy.com/sites/syfy/files/styles/1200x680/public/2020/08/seafever_0hero.jpg?offset-y=0">
+        <p>
+        8 Indie horror movies from 2020 you can watch right now
+        </p>
+        </div>
+
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>The Python Package Index is a repository of software for the Python programming language.</p>
+    <div class="col-md-6">
+        <h2>Hot films</h2>
+        <p>Here's supposed to be films. Yeah.</p>
         <p><a class="btn btn-default" href="https://pypi.python.org/pypi">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Microsoft Azure</h2>
-        <p>You can easily publish to Microsoft Azure using Visual Studio. Find out how you can host your application using a free trial today.</p>
-        <p><a class="btn btn-default" href="http://azure.microsoft.com">Learn more &raquo;</a></p>
     </div>
 </div>
