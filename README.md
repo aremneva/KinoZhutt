@@ -27,7 +27,7 @@
     # Installation
  ======================
 
-     Please see the file called INSTALL. 
+     Please tell us if you see the file called INSTALL, we have been looking for it too. 
     
     # Licensing
   ====================
