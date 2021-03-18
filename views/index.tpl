@@ -23,20 +23,31 @@
     <div class="col-md-6">
 
         <h2>Brand new articles</h2>
+
+        <br> <br>
+
         <div class="box">
-        <img src="static\images\cat.jpg">
-        <br>
+        <img src="https://images.theconversation.com/files/218251/original/file-20180509-34027-m9rnck.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=926&fit=clip">
         <p>
-            This is just a cat. It's cute. This is just a cat. It's cute. 
+        Horror film festivals: why their best screenings never make it to multiplexes
         </p>
         </div>
 
         <br> <br>
 
         <div class="box">
-        <img src="https://fastly.syfy.com/sites/syfy/files/styles/1200x680/public/2020/08/seafever_0hero.jpg?offset-y=0">
+        <img src="https://static0.srcdn.com/wordpress/wp-content/uploads/2020/04/Stephen-King.jpg">
         <p>
-        8 Indie horror movies from 2020 you can watch right now
+        Stephen King: a master of horror who finds terror in the everyday
+        </p>
+        </div>
+
+        <br> <br>
+
+        <div class="box">
+        <img src="https://www.dailynews.com/wp-content/uploads/2019/09/LDN-L-SCARYMOVIES-20-0929-1.jpg?w=620">
+        <p>
+        Why Do We Like Horror Movies?
         </p>
         </div>
 
@@ -44,6 +55,5 @@
     <div class="col-md-6">
         <h2>Hot films</h2>
         <p>Here's supposed to be films. Yeah.</p>
-        <p><a class="btn btn-default" href="https://pypi.python.org/pypi">Learn more &raquo;</a></p>
     </div>
 </div>
