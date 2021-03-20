@@ -1,43 +1,52 @@
-    # Title:  KinoZhutt
+# KinoZhutt
     This is the group project
     
 
-    # Program Overview
+## Program Overview
 
-======================
+=========================
 
     KinoJutt is a database of information related to films.
     
 
-
-     # The Latest Version
+## The Latest Version
  
-=========================
+==========================
 
     Details of the latest version can be found, so try harder to find them
+    
 
+## Getting Started 
 
-     # Documentation
+====================
+
+    1. Run the project on the web server;
+    2. The End?
+
+## Documentation
      
-=====================
+======================
 
      The most up-to-date documentation can can be found if you make it.
     
 
-    # Installation
- ======================
+## Installation
+    
+=======================
 
      Please tell us if you see the file called INSTALL, we have been looking for it too. 
+
     
-    # Licensing
-  ====================
+## Licensing
+    
+=====================
 
     no license.
     
     
-    # Contacts
-
-==============
+## Contacts
+    
+====================
 
     If you want freely available support for running project please contact us.
 
