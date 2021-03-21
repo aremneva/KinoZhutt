@@ -29,6 +29,8 @@
     3. Run the project;
     4. Now browse to http://localhost:????? 
 
+![image](https://user-images.githubusercontent.com/22867863/111911373-68906680-8a76-11eb-8391-8883d6625e40.png)
+
 ## Documentation
      
 ======================
