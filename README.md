@@ -20,7 +20,7 @@
 
 ====================
 
-###Install in your local development environment
+### Install in your local development environment
 
     1. Once you've found a home for your forked repository, clone it.
 
