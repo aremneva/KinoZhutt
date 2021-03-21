@@ -22,12 +22,19 @@
 
 ### Install in your local development environment
 
-    1. Once you've found a home for your forked repository, clone it.
-
-![image](https://user-images.githubusercontent.com/22867863/111911151-6083f700-8a75-11eb-9f57-458808f437fa.png)
-
-    3. Run the project;
-    4. Now browse to http://localhost:????? 
+1. Once you've found a home for your KinoZhutt repository, clone it.
+```bash
+git clone https://github.com/aremneva/KinoZhutt.git
+```
+2. Install required Python libraries
+```bash
+pip install -r requirements.txt
+```
+3. Run KinoZhutt;
+```bash
+python app.py
+```
+4. Open Web browser and navigate to http://localhost:???? 
 
 ![image](https://user-images.githubusercontent.com/22867863/111911373-68906680-8a76-11eb-8391-8883d6625e40.png)
 
