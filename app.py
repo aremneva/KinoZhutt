@@ -24,7 +24,10 @@ if __name__ == '__main__':
     STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static').replace('\\', '/')
     HOST = os.environ.get('SERVER_HOST', 'localhost')
     try:
-        PORT = int(os.environ.get('SERVER_PORT', '5555'))
+        for k,v in os.environ.items():
+            print(k,v)
+        PORT = int(os.environ.get('SERVER_PORT', '8080'))
+        print(PORT)
     except ValueError:
         PORT = 5555
 

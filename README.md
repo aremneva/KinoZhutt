@@ -15,7 +15,7 @@ Details of the latest version can be found, so try harder to find them
 
 ### Install in your local development environment
 
-1. Once you've found a home for your KinoZhutt repository, clone it.
+1. Once you've found a home for your KinoZhutt repository, clone it
 ```bash
 git clone https://github.com/aremneva/KinoZhutt.git
 ```
@@ -23,7 +23,7 @@ git clone https://github.com/aremneva/KinoZhutt.git
 ```bash
 pip install -r requirements.txt
 ```
-3. Run KinoZhutt;
+3. Run KinoZhutt
 ```bash
 python app.py
 ```
@@ -31,7 +31,7 @@ python app.py
 
 ## Documentation
 
-The most up-to-date documentation can can be found if you make it.
+The most up-to-date documentation can be found if you make it.
     
 
 ## Installation
