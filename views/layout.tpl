@@ -30,7 +30,7 @@
         </div>
     </div>
 
-    <div class="container body-content">
+    <div class="container body-content" align="left">
         {{!base}}
         <hr />
         <footer>
