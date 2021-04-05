@@ -16,6 +16,11 @@
    display: flex;
    align-items: top;
 }
+.blocktext {
+    margin-left: 400px;
+    margin-right: 400px;
+    width: 6em
+}
     </style>
 </div>
 
@@ -56,4 +61,14 @@
         <h2>Hot films</h2>
         <p>Here's supposed to be films. Yeah.</p>
     </div>
+</div>
+<div class=blocktext>
+<h3> Ask a Question </h3>
+<form action="/home" method="post">
+
+        <p><textarea rows="2" cols="50" name="QUEST" placeholder="Your question"></textarea></p> 
+        <p><input type="text" size="50" name="ADRESS" placeholder="Your email"></p>
+        <p><input type="submit" value="Send"></p>
+       
+</form>
 </div>
