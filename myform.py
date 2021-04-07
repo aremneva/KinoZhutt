@@ -1,7 +1,9 @@
 from bottle import post, request
+import re
 
 @post('/home', method='post')
 def my_form():
+    regex_email=(r"(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)")
     question=request.forms.get('QUEST')
     mail = request.forms.get('ADRESS')
     if (question=="" and mail ==""):
@@ -11,5 +13,7 @@ def my_form():
     elif question=="":
         return "You didn't enter a question!"
     else: 
-        return "Thanks! The answer will be sent to the mail %s" % mail
-        
+        if not re.search(regex_email,mail):
+            return "Incorrect email!"
+        else:
+            return "Thanks! The answer will be sent to the mail %s" % mail
