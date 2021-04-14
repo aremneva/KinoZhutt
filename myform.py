@@ -1,6 +1,6 @@
 from bottle import post, request
 
-import re, pdb
+import re, pdb, json, os
 
 @post('/home', method='post')
 def my_form():
@@ -15,7 +15,11 @@ def my_form():
             return "Your email seems to be invalid"
         else:
             questions = {}
+            if os.stat('questions.txt').st_size != 0:
+                with open('questions.txt') as file:
+                    questions = json.load(file)
             questions[request.forms.get('ADRESS')] = request.forms.get('QUESTION')
-            pdb.set_trace()
+            with open('questions.txt','w') as outfile:
+                json.dump(questions, outfile)
             return "Thanks! The answer will be sent to the mail %s" % mail
 
