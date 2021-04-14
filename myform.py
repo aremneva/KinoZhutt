@@ -1,6 +1,6 @@
 from bottle import post, request
 
-import re
+import re, pdb
 
 @post('/home', method='post')
 def my_form():
@@ -8,10 +8,14 @@ def my_form():
     mail = request.forms.get('ADRESS')
     warning = ""
     if question=="" or mail=="":
-        return "Вы не заполнили все поля!"
+        return "Fill all the fields!"
     else:
         regex = re.compile('^[A-Za-z0-9\._]+@[A-Aa-z0-9]+(\.[A-Za-z]+)+$')
         if not re.match(regex,mail):
             return "Your email seems to be invalid"
         else:
+            questions = {}
+            questions[request.forms.get('ADRESS')] = request.forms.get('QUESTION')
+            pdb.set_trace()
             return "Thanks! The answer will be sent to the mail %s" % mail
+
