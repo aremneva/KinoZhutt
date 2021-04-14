@@ -1,6 +1,7 @@
 from bottle import post, request
 import re
 import pdb
+import json
 
 @post('/home', method='post')
 def my_form():
@@ -17,10 +18,15 @@ def my_form():
         if not re.search(regex_email,mail):
             return "Incorrect email!"
         else:
-            
             questions={}
             questions[mail]=question
-            pdb.set_trace()
-            return "Thanks! The answer will be sent to the mail %s" % mail
+            with open('data.txt', 'a+') as f: #открытие файла для записи
+                json.dump(questions, f)
+                f.write('\n') 
+                f.close()
             
+            #pdb.set_trace()
+            return "Thanks! The answer will be sent to the mail %s" % mail
+
+   
             
