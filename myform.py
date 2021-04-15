@@ -18,8 +18,10 @@ def my_form():
             if os.stat('questions.txt').st_size != 0:
                 with open('questions.txt') as file:
                     questions = json.load(file)
-            questions[question] = mail
+                file.close()
+            questions[mail] = question
             with open('questions.txt','w') as outfile:
                 json.dump(questions, outfile)
+            outfile.close()
             return "Thanks! The answer will be sent to the mail %s" % mail
 
