@@ -28,8 +28,12 @@ def my_form():
             with open('data.txt', 'w') as f: #открытие файла для записи
                 questions[mail]=question
                 json.dump(questions, f)
-                f.write("\n")
             f.close()
+
+            #with open('data.txt', 'a') as f: #открытие файла для записи
+             #   questions[mail]=question
+             #   json.dump(questions, f)
+           # f.close()
             #pdb.set_trace()
             return "Thanks! The answer will be sent to the mail %s" % mail
 
