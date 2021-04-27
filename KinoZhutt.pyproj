@@ -20,6 +20,9 @@
     <RootNamespace>KinoZhutt</RootNamespace>
     <InterpreterId>Global|PythonCore|3.7</InterpreterId>
     <WebBrowserPort>1117</WebBrowserPort>
+    <TestFramework>unittest</TestFramework>
+    <UnitTestPattern>utest*.py</UnitTestPattern>
+    <UnitTestRootDirectory>.</UnitTestRootDirectory>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -38,6 +41,12 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="routes.py" />
+    <Compile Include="utest_assertFalse.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="utest_assertTrue.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="static\" />
