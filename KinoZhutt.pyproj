@@ -20,6 +20,9 @@
     <RootNamespace>KinoZhutt</RootNamespace>
     <InterpreterId>Global|PythonCore|3.7</InterpreterId>
     <WebBrowserPort>8080</WebBrowserPort>
+    <TestFramework>unittest</TestFramework>
+    <UnitTestPattern>test*.py</UnitTestPattern>
+    <UnitTestRootDirectory>.</UnitTestRootDirectory>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -35,6 +38,8 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="routes.py" />
+    <Compile Include="test_correct.py" />
+    <Compile Include="test_incorrect.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="static\" />
