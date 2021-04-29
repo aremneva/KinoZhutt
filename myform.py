@@ -15,7 +15,7 @@ def my_form():
     #question=request.forms.get('QUEST')
     #mail = request.forms.get('ADRESS')
     question="what"
-    mail="a@gmail.com"
+    mail="a@gmaieioqfj33n4y5yoi43567...,l.com"
     if (question=="" and mail ==""):
         return "You didn't enter a question and email!"
     elif mail=="":
