@@ -25,6 +25,7 @@
                     <li><a href="/home">Home</a></li>
                     <li><a href="/about">Films</a></li>
                     <li><a href="/contact">Articles</a></li>
+                    <li><a href="/actUsers">Active users</a></li>
                 </ul>
             </div>
         </div>
