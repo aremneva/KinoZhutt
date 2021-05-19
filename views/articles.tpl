@@ -50,7 +50,7 @@
         <p><input rows="2" cols="50" name="TITLE" placeholder="Your article's title"></p>
         <p><textarea type="text" size="50" name="DESCRIPTION" placeholder="Your article's description"></textarea></p>
         <p><input rows="2" cols="50" name="AUTHOR" placeholder="Your name"></p>
-        <p><input rows="2" cols="50" name="WRITTEN_DATE" placeholder="A date when you wrote the article"></p> 
+        <p><input rows="2" cols="50" name="WRITTEN_DATE" placeholder="When the article was written"></p> 
         <p><input type="submit" value="Add" class="btn btn-default"></p>
 </form>
 

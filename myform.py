@@ -1,6 +1,6 @@
 from bottle import post, request
 
-import re, pdb, json, os, myform_mail
+import re, pdb, json, os, checks
 
 @post('/home', method='post')
 def my_form():
@@ -10,7 +10,7 @@ def my_form():
     if question=="" or mail=="":
         return "Fill all the fields!"
     else:
-        if not myform_mail.mailCheck.match(mail):
+        if not myform_mail.input_check.mail_correct(mail):
             return "Your email seems to be invalid"
         else:
             questions = {}

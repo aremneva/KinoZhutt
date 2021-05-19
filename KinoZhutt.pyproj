@@ -40,7 +40,7 @@
     <Compile Include="myform.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="myform_mail.py">
+    <Compile Include="checks.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="routes.py" />
