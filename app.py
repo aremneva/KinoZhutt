@@ -6,6 +6,7 @@ import bottle
 import os
 import sys
 import myform 
+import add_article
 
 # routes contains the HTTP handlers for our server and must be imported.
 import routes
