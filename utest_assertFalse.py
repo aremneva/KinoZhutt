@@ -1,4 +1,4 @@
-import unittest, re, myform_mail
+import unittest, re, checks
 
 class AssertFalseTest(unittest.TestCase):
 
@@ -8,7 +8,7 @@ class AssertFalseTest(unittest.TestCase):
                          '@user@mail.ru', 'username@mail.n', 'user@mail.russ'
                          'user.@mail.ru', 'user@mail..ru', 'user@mail.ru.']
         for mail in list_mail_cor:
-            self.assertFalse(myform_mail.input_check.mail_correct(mail))
+            self.assertFalse(checks.input_check.mail_correct(mail))
 
 if __name__ == '__main__':
     unittest.main()

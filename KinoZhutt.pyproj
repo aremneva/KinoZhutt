@@ -44,10 +44,16 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="routes.py" />
+    <Compile Include="utest_date_correct.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="utest_assertFalse.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="utest_assertTrue.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="utest_date_incorrect.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
