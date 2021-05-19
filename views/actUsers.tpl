@@ -14,6 +14,7 @@
     font-family: Verdana, Arial, Helvetica, sans-serif; 
     font-size: 12pt; /* Размер шрифта в пунктах */ 
    }
+
    .button {
   background-color: #242425;
   border: none;
@@ -29,26 +30,34 @@
 </style>
 %with open('./users.txt') as users:
 	%data=json.load(users)
-	%a = 20
 	
 	<h2>Top active users:</h2>
 	<br>
 	<br>
 	<br>
-%for key, value in data.items():
-	<div class=content>
-	
-	<p width=200 height=350> {{value}}</p>
-	<hr>
+%for key, val in data.items():
+	<div class="jumbotron jumbotron-fluid">	
+	<div class="container">
+	<p width=200 height=350><font size="5" color="gray" face="Arial">#{{val['num']}}</font></p>
+	<p><font size="4" color="gray" face="Arial">User: </font></p>
+	<p width=200 height=350> <font size="5" color="gray" face="Arial">{{val['name']}}</font></p>
+	<p><font size="4" color="gray" face="Arial">Description: </font></p>
+	<p width=200 height=350> <font size="5" color="gray" face="Arial">{{val['text']}}</font></p>
+	<div align="right">
+	<p width=200 height=350> <font size="3" color="gray" face="Arial">{{val['data']}}</font></p>
 	</div>
-	
+	</div>
+	</div>
 %end 
-<div class=blocktext>
-<h3> Add user </h3>
-<form action="/actUsers" method="post">
+	<div class="junbotron">
+	<h3> Add user </h3>
+	<form action='/actUsers' method='post'>
 		<p><textarea rows="2" cols="50" name="num" placeholder="Position"></textarea></p> 
         <p><textarea rows="2" cols="50" name="user" placeholder="User"></textarea></p> 
-        <p > <input type="submit"  class="button button" value="Send"></p>
+		<p><textarea rows="2" cols="50" name="text" placeholder="Description"></textarea></p> 
+		
+        <p> <input type="submit"  class="button button" value="Send"></p>
+		
 </form>
 </div>
 
