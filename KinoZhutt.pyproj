@@ -34,6 +34,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.py" />
+    <Compile Include="date_test.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="myform.py">
       <SubType>Code</SubType>
     </Compile>
@@ -41,7 +44,9 @@
     <Compile Include="something.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="test_date_cor.py" />
     <Compile Include="test_correct.py" />
+    <Compile Include="test_date_incor.py" />
     <Compile Include="test_incorrect.py" />
   </ItemGroup>
   <ItemGroup>

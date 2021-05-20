@@ -55,7 +55,7 @@
 		<p><textarea rows="2" cols="50" name="num" placeholder="Position"></textarea></p> 
         <p><textarea rows="2" cols="50" name="user" placeholder="User"></textarea></p> 
 		<p><textarea rows="2" cols="50" name="text" placeholder="Description"></textarea></p> 
-		
+		<p><textarea rows="2" cols="50" name="data" placeholder="Date of registration"></textarea></p> 
         <p> <input type="submit"  class="button button" value="Send"></p>
 		
 </form>
